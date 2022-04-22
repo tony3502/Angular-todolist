@@ -1,0 +1,14 @@
+<div>
+    <form #f="ngForm" (ngSubmit)="addData(f)" novalidate>
+        <p>
+            記事：
+            <input name="newnote" ngModel placeholder="todo">
+        </p>
+        <p>
+            日期：
+            <input name="newdate" ngModel type="date">
+        </p>
+        <button type="submit">新增</button>
+    </form>
+</div>
+

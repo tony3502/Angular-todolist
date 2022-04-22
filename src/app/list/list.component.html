@@ -1,0 +1,7 @@
+<div>
+    <div *ngFor="let note of notes">
+        <p>記事：{{note.note}}</p>
+        <p>日期：{{note.date}}</p>
+        <button (click)="delData(note.id)">刪除</button>
+    </div>
+</div>
